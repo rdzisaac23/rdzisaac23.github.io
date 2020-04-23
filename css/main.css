@@ -1,24 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato|Open+Sans:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 body{
     margin: 1.25rem auto;
     padding: .1rem;
     max-width: 600px;
-    font-family: monospace;
+    font-family: 'Lato', sans-serif;;
+    font-size: 16px;
+    color: black;
 }
 
-#title, footer {
+header, footer, footer a {
     background-color: orangered;
-    color: white;
+    color: mintcream;
     text-align: center;
     border-radius: 10px;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 35px;
+    padding: .5em;
 }
 
 header img{
     width: 150px;
+    height: auto;
     float: right;
     margin: 10px;
-    box-shadow: .3px .3pc 10px orangered;
+    border-radius: 10px;
 }
