@@ -10,11 +10,16 @@ body{
     color: black;
 }
 
-header, footer, footer a {
+header, footer{
     background-color: orangered;
-    color: mintcream;
+    color: rgb(249, 252, 251);
     text-align: center;
     border-radius: 10px;
+}
+
+footer a {
+    color: rgb(20, 16, 223);
+    font-size: large;
 }
 
 h1 {
@@ -23,9 +28,14 @@ h1 {
 }
 
 header img{
-    width: 150px;
+    width: 180px;
     height: auto;
     float: right;
     margin: 10px;
     border-radius: 10px;
+}
+
+footer {
+    margin: 0;
+    padding: 8px;
 }
