@@ -13,14 +13,18 @@ html {
 /* body rules here */
 
 body {
-    max-width: 960px;
-    margin: 0 auto;
+    max-width:960px;
+    margin: 10px auto;
+    padding: 1rem 2%;
+    justify-content: center;
     font-family: Verdana;
     font-size: 16px;
+    display: block;
 }
 
 /* Header rules here */
 header {
+    
     background-color: midnightblue;
     padding: 1rem 2%;
     color: ghostwhite;
@@ -37,16 +41,11 @@ header h2 {
 }
 
 main h3 {
-    color: midnightblue;
+    color: rgb(102, 102, 202);
 }
 
-main figure img {
+img {
     width: 100%;
-}
-
-main figure {
-    width: 20%;
-    margin: 0;
 }
 
 main figcaption {
@@ -54,68 +53,14 @@ main figcaption {
     font-size: .8rem;
 }
 
+
 footer {
     text-align: center;
     padding: 1rem 2%;
     background-color: midnightblue;
     color: ghostwhite;
     border-radius: 15px;
-}
-
-
-.grid-desing {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-column-gap: 5%;
-    grid-template-rows: auto;
-    border-color: black;
-}
-
-.hicks-law {
-    grid-column: 1;
-    grid-row: 1;
-    color: blue;
-}
-
-.fig-one {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: center;
-}
-
-.fig-two {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.fitts-law {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.fig-three {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.fig-four {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.thirds-rule {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.fig-five {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.fig-six {
-    grid-column: 3;
-    grid-row: 3;
+    
 }
 
 footer a {
@@ -127,7 +72,84 @@ footer a:hover {
 }
 
 
+.container {
+    margin: 0 auto;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+    grid-template-rows: auto;
+    border-color: black;
+}
 
+.hicks-law {
+    grid-column: 1;
+    color: blue;
+}
+
+.fig-one {
+    grid-column: 2;
+}
+
+.fig-two{
+    grid-column: 3;
+}
+
+.fitts-law {
+    grid-column: 1;
+}
+
+.fig-three {
+    grid-column: 2;
+}
+
+.fig-four {
+    grid-column: 3;
+}
+
+.thirds-rule {
+    grid-column: 1;
+}
+
+.fig-five {
+    grid-column: 2;
+}
+
+.fig-six {
+    grid-column: 3;
+}
+
+.foot{
+    grid-column: 1/4;
+}
+
+@media screen and (max-width: 600px) { 
+    /* beginning of media query */
+
+    html {
+        display: block;
+    }
+
+    header h1{
+        font-size: 20px
+    }
+
+    header h2{
+        font-size: 18px;
+    }
+
+    body {
+        font-family: Verdana;
+        font-size: 16px;
+    }
+
+
+      .container {
+        display: block;
+      }
+        
+    /* end of media query */ 
+    }
 
 
 
@@ -137,3 +159,4 @@ footer a:hover {
     display: table;
     clear: both;
 }
+
