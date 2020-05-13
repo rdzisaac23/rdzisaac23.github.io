@@ -81,6 +81,20 @@ footer {
     color: antiquewhite;
 }
 
+/* ---------- Links -------------- */
+
+footer a{
+    color: whitesmoke;
+}
+
+footer a:visited{
+    color: crimson;
+}
+
+footer a:hover{
+    color: brown;
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
