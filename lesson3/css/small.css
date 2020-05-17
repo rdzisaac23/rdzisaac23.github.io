@@ -75,6 +75,7 @@ div.img-domain img{
 
 /*----------- FOOTER --------------*/
 footer {
+    margin-top: 5px;
     background-color: #364B5B;
     padding: .5rem 2%;
     text-align: center;
