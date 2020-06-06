@@ -37,7 +37,23 @@
 
     /*----------- MAIN --------------*/
 
+section.forecast{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 
+section.forecast div{
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+section.forecast div h5{
+    background-color: lightgrey;
+    margin: 0;
+    padding: 1rem 0;
+
+}
 
     /*----------- FOOTER --------------*/
 
