@@ -44,16 +44,34 @@
 
     /* -----------hero image ------------ */
 
-    div.hero-image{
-        margin: 2%;
-        height: auto;
-    }
-
-    .weathersummary{
-        left: 10px;
+    div.hero-div{
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        /* 
+        transform: translate(-50%, -50%);
+        color: white;
+        top: 50%;
+        left: 50%; */
     }
     
-
+    
+    div.hero-ph{
+        width: 100%;
+        height: 100%;
+        /* background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; */
+    }
+    
+    div.hero-ph img{
+        /* filter: blur(1px); */
+        width: 100%;
+        height: 100%;
+    }
+    
 
 }
 

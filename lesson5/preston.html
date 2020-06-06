@@ -23,7 +23,7 @@
 
     <!-- toggleMenu()-->
     <script src="js/scripts.js"></script>
-
+    <script src="js/displayBanner.js"></script>
     <!-- Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -53,14 +53,20 @@
     </div>
     <main class="main-content">
         <h1>Preston</h1>
+        <!-- Banner -->
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.<br>Saturday at the city park pavilion.</p>
+        </div>
         <!--  -->
-        <div class="hero-image">
-            <div class="hero-text">Image Place holder</div>
+        <div class="hero-div">
+            <div class="hero-ph">
+                <img src="images/preston.jpg" alt="Preston">
+            </div>
             <section class="weathersummary">
                 <h3>Today's Weather</h3>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
+                <p>High: Value</p>
+                <p>Low: Value</p>
+                <p>Wind: Value</p>
             </section>
         </div>
         <!--  -->
@@ -88,6 +94,17 @@
                 Online Learning</a>
             <script src="js/currendate.js"></script>
         </footer>
+
+        <script>
+            const date = new Date();
+            const today = date.getDay();
+            const element = document.getElementById("banner");
+            if (today == 6) {
+                element.classList.add("showme");
+            } else {
+                element.classList.add("hideme");
+            }
+        </script>
     </div>
 </body>
 
