@@ -60,7 +60,12 @@
         <!--  -->
         <div class="hero-div">
             <div class="hero-ph">
-                <img src="images/preston.jpg" alt="Preston">
+                <picture class="photoA">
+                    <source media="(max-width: 200px)" srcset="images/hero200.jpg">
+                    <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/hero800.jpg">
+                    <img src="images/hero1200.jpg" alt="preston">
+                </picture>
             </div>
             <section class="weathersummary">
                 <h3>Today's Weather</h3>
