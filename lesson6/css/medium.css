@@ -1,0 +1,94 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 40em) {
+
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: auto;
+    }
+
+    /*----------- NAVIGATION --------------*/
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        padding: .8rem 1rem;
+    }
+
+    /*----------- MAIN --------------*/
+
+section.forecast{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+section.forecast div{
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+section.forecast div h5{
+    background-color: lightgrey;
+    margin: 0;
+    padding: 1rem 0;
+
+}
+
+    /*----------- FOOTER --------------*/
+
+
+    /* -----------hero image ------------ */
+
+    div.hero-div{
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        /* 
+        transform: translate(-50%, -50%);
+        color: white;
+        top: 50%;
+        left: 50%; */
+    }
+    
+    
+    div.hero-ph{
+        width: 100%;
+        height: 100%;
+        /* background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; */
+    }
+    
+    div.hero-ph img{
+        /* filter: blur(1px); */
+        width: 100%;
+        height: 100%;
+    }
+    
+
+}
+
+/* end of media query */
