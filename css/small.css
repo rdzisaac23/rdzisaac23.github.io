@@ -8,7 +8,7 @@ body{
 }
 
 header, footer{
-    background-color: orangered;
+    background-color: rgb(50, 25, 192);
     color: rgb(249, 252, 251);
     text-align: center;
     font-weight: 700;
@@ -20,6 +20,10 @@ footer a {
     font-weight: 400;
 }
 
+footer a:visited{
+    color: crimson;
+}
+
 h1 {
     font-size: 1.5rem;
     padding: .5em;
@@ -27,8 +31,12 @@ h1 {
 
 h2 {
     font-size: 1rem;
-    color: aliceblue;
+    color: rgb(39, 41, 43);
     text-shadow: 2px 2px 5px #000;
+}
+
+main ul li{
+    margin: 5px;
 }
 
 header img{
