@@ -1,0 +1,163 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+} */
+
+/* body rules here */
+
+body {
+    max-width:1240px;
+    margin: 10px auto;
+    padding: 1rem 2%;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header rules here */
+header {
+    
+    background-color: #DBA159;
+    padding: 1rem 2%;
+    color: ghostwhite;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+
+}
+
+main h3 {
+    color: #EFD780;
+}
+
+img {
+    width: 100%;
+}
+
+main figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #dba159;
+    color: ghostwhite;
+    border-radius: 15px;
+}
+
+footer a {
+    color: wheat;
+}
+
+footer a:hover {
+    color: blueviolet;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+    grid-template-rows: auto;
+    border-color: black;
+}
+
+.hicks-law {
+    grid-column: 1;
+}
+
+.fig-one {
+    grid-column: 2;
+}
+
+.fig-two{
+    grid-column: 3;
+}
+
+.fitts-law {
+    grid-column: 1;
+}
+
+.fig-three {
+    grid-column: 2;
+}
+
+.fig-four {
+    grid-column: 3;
+}
+
+.thirds-rule {
+    grid-column: 1;
+}
+
+.fig-five {
+    grid-column: 2;
+}
+
+.fig-six {
+    grid-column: 3;
+}
+
+.foot{
+    grid-column: 1/4;
+}
+
+@media screen and (max-width: 600px) { 
+    /* beginning of media query */
+
+    html {
+        display: block;
+    }
+
+    header h1{
+        font-size: 20px
+    }
+
+    header h2{
+        font-size: 18px;
+    }
+
+    body {
+        font-family: Verdana;
+        font-size: 16px;
+    }
+
+
+      .container {
+        display: block;
+      }
+        
+    /* end of media query */ 
+    }
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
