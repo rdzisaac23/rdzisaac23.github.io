@@ -1,0 +1,65 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 40em) {
+
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: auto;
+    }
+
+    /*----------- NAVIGATION --------------*/
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        padding: .8rem 1rem;
+    }
+
+    /*----------- MAIN --------------*/
+
+
+
+    /*----------- FOOTER --------------*/
+
+    div.footer {
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    /* -----------hero image ------------ */
+
+    div.hero-image {
+        margin: 0;
+        height: auto;
+    }
+
+    .weathersummary {
+        left: 10px;
+    }
+
+
+
+}
+
+/* end of media query */
