@@ -37,6 +37,10 @@
 
     /*----------- MAIN --------------*/
 
+    main{
+        padding: 2% 0%;
+    }
+
 section.forecast{
     margin-top: 2%;
     display: grid;

@@ -30,7 +30,7 @@ header {
     padding: .5rem 2%;
     background-color: #264653;
     color: #e76f51;
-    font-family: 'Montserrat', sans-serif1;
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 header img {
@@ -67,7 +67,7 @@ nav button {
 
 
 nav {
-    font-family: 'Montserrat', sans-serif1;
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 nav ul {
