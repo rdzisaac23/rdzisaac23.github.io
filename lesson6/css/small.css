@@ -138,6 +138,7 @@ div.hero-div {
 div.hero-ph {
     width: 100%;
     height: auto;
+    border: yellow 1px solid;
 }
 
 div.hero-ph img {
