@@ -173,13 +173,13 @@ div.contact {
     padding: 0 2%;
 }
 
-div.gallery-title{
+div.gallery-title {
     margin: 0;
     padding-top: 2%;
     text-align: center;
 }
 
-div.grid-gallery{
+div.grid-gallery {
     margin-top: 5%;
     margin-left: 4%;
     display: grid;
@@ -189,33 +189,33 @@ div.grid-gallery{
     grid-template-rows: auto;
 }
 
-div.grid-gallery picture{
+div.grid-gallery picture {
     border: solid .25px #777;
-    
+
 }
 
-div.grid-gallery picture:hover{
+div.grid-gallery picture:hover {
     border: solid 1px #777;
     box-shadow: 10px 5px 5px grey;
 }
 
-div.grid-gallery picture img{
+div.grid-gallery picture img {
     width: 100%;
     margin: auto;
 }
 
-div.container{
+div.container {
     display: none;
     margin: 0;
 }
 
-div.container p{
+div.container p {
     margin: 0%;
 }
 
 /*  form */
 
-div.form{
+div.form {
     width: 90%;
     margin: auto;
 }
@@ -233,12 +233,14 @@ form legend {
     padding: 0 .5rem;
 }
 
-form label.top, form div {
+form label.top,
+form div {
     display: block;
     padding-top: 1rem;
- 
+
     font-size: 1rem;
 }
+
 form label.topSlide {
     display: block;
     padding-top: 1rem;
@@ -248,11 +250,13 @@ form label.topSlide {
     padding: .75rem;
     border: solid 1px #999;
     border-radius: 4px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     color: blue;
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select,
+input.datalist {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -262,7 +266,7 @@ form label.top input, form label.top select {
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.sbs {
@@ -281,6 +285,7 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+
 form label.top input:required {
     border-left: solid red 6px;
 }
@@ -288,6 +293,7 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: solid green 6px;
 }
+
 #stormRangeValue {
     margin: 0 5px;
 }

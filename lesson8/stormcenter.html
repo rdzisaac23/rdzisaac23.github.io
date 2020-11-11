@@ -59,8 +59,8 @@
                 <!--  -->
                 <fieldset>
                     <legend>Person Information</legend>
-                    <label class="top">Full Name*<input type="text" name="name" required
-                            pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}"></label>
+                    <label class="top">Full Name*<input type="text" name="name" required placeholder="Isaac Rodriguez"
+                            pattern="(?=.*[a-z]).{5,}"></label>
                     <label class="top">Email<input type="email" name="email"
                             placeholder="someone@something.com"></label>
                     <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}"
@@ -72,16 +72,15 @@
                     <legend>Storm Information</legend>
                     <label class="top">Storm Date <input type="date" name="stormDate"></label>
                     <!--  -->
-                    <label class="top">Storm Type
-                        <select name="stormType">
-                            <option value="">Select Type...&#9662;</option>
-                            <option value="flashFlood">Flash Flood</option>
-                            <option value="hail">Hail</option>
-                            <option value="hurricane">Hurricane</option>
-                            <option value="thunderstorm">Thunderstrom</option>
-                            <option value="tornado">Tornado</option>
-                        </select>
-                    </label>
+                    <label class="top">Storm Type</label>
+                    <input class="datalist" list="storms" name="stormType">
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
                     <!--  -->
                     <div class="topSlide">
                         <label>Storm Severity </label><input type="range" id="stormRange" value="5" min="1" max="10"
