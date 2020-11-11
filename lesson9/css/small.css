@@ -195,6 +195,31 @@ div.container{
     display: none;
 }
 
+
+main div.cards div{
+    margin-top: 2%;
+    padding: 1%;
+}
+
+main div.cards div img{
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+
+main div.cards div h2{
+    margin: 2% 0 0 2%;
+}
+
+main div.cards div h3{
+    margin: 2% 0 5% 2%;
+}
+
+main div.cards div p{
+    margin: 0;
+    margin-left: 2%;
+}
+
 /* ------------- FORM ------------ */
 
 /*----------- FORM --------------*/

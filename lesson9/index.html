@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Preston</title>
+    <title>Weather Wellnes</title>
 
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -42,8 +42,8 @@
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
-                <li><a href="/index.html">Home</a></li>
-                <li class="active"><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
@@ -52,70 +52,19 @@
         </nav>
     </div>
     <main class="main-content">
-        <h1>Preston</h1>
+        <h1>Home</h1>
         <!-- Banner -->
-        <div id="banner">
+        <!-- <div id="banner">
             <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.<br>Saturday at the city park pavilion.</p>
-        </div>
+        </div> -->
         <!--  -->
-        <div class="hero-div">
-            <div class="hero-ph">
-                <picture class="photoA">
-                    <source media="(max-width: 200px)" srcset="images/hero200.jpg">
-                    <source media="(max-width: 500px)" srcset="images/hero500.jpg">
-                    <source media="(max-width: 800px)" srcset="images/hero800.jpg">
-                    <img src="images/hero1200.jpg" alt="preston">
-                </picture>
-            </div>
-            <section class="weathersummary">
-                <h3>Today's Weather</h3>
-                <p>High: <span id="temp">34</span>&deg;</p>
-                <p>Low: Value</p>
-                <p>Wind Speed:<span id="wind-speed">60</span> miles per hour </p>
-                <p id="chill">message</p>
-            </section>
+        <div class="cards">
+
         </div>
         <!--  -->
         <div>
-            <section class="forecast">
-                <div>
-                    <h5>Monday</h5>
-                    <img src="#" alt="rain">
-                    <p>40&deg;</p>
-                </div>
-                <div>
-                    <h5>Tuesday</h5>
-                    <img src="#" alt="rain">
-                    <p>30&deg;</p>
-                </div>
-                <div>
-                    <h5>Wednsday</h5>
-                    <img src="#" alt="rain">
-                    <p>20&deg;</p>
-                </div>
-                <div>
-                    <h5>Thursday</h5>
-                    <img src="#" alt="rain">
-                    <p>10&deg;</p>
-                </div>
-                <div>
-                    <h5>Friday</h5>
-                    <img src="#" alt="rain">
-                    <p>0&deg;</p>
-                </div>
-            </section>
         </div>
         <!--  -->
-        <div class="article">
-            <article>
-                <H2>Article and related image will go here soon</H2>
-            </article>
-        </div>
-        <!--  -->
-        <div class="contact">
-            Contact us with an addres and map will end up here
-        </div>
-
         <!-- end content -->
     </main>
 
@@ -132,6 +81,7 @@
         </footer>
 
         <script src="js/windchill.js"></script>
+        <script src="js/towns.js"></script>
 
         <script>
             const date = new Date();
