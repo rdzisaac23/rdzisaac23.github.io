@@ -129,10 +129,8 @@ div.hideme {
 }
 
 div.hero-div {
-    margin: 10px auto;
+    margin-left: 2%;
     position: relative;
-    width: 100%;
-    height: 250px;
 }
 
 div.hero-ph {
@@ -162,14 +160,30 @@ section.forecast{
     display: none;
 }
 
+
 div.article {
-    background-color: rgb(159, 231, 159);
-    padding: 0 2%;
+    margin-left: 2%;
 }
 
+div.article figure img{
+    width: 100%;
+}
+
+div.article figure{
+    width: 100%;
+    margin: 0;
+}
+
+/* ----------- CONTACT ------------ */
+
+
 div.contact {
-    background-color: #264653;
-    padding: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.contact div.iframe-map{
+    display: none;
 }
 
 /*----------- FOOTER --------------*/

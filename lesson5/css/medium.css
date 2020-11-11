@@ -11,7 +11,11 @@
         width: auto;
     }
 
+
+
     /*----------- NAVIGATION --------------*/
+    
+
 
     nav button {
         display: none;
@@ -21,8 +25,8 @@
         display: block;
     }
 
-    nav ul {
-        margin-left: 2%;
+    nav ul{
+        margin-left: 1%;
     }
 
     nav ul li {
@@ -37,47 +41,59 @@
 
     /*----------- MAIN --------------*/
 
-    main{
+    main {
         padding: 2% 0%;
     }
 
-section.forecast{
-    margin-top: 2%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
+   section.forecast {
+        margin-top: 2%;
+        margin-left: 2%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
 
-section.forecast div{
-    text-align: center;
-    border: .5px solid rgb(56, 11, 11);
-}
+    section.forecast div {
+        text-align: center;
+        border: .5px solid rgb(56, 11, 11);
+    }
 
-section.forecast div h5{
-    background-color: #e9c46a;
-    margin: 0;
-    padding: 1rem 0;
+    section.forecast div h5 {
+        background-color: #e9c46a;
+        margin: 0;
+        padding: 1rem 0;
+    }
 
-}
+
+    div.forecast section.forecast div img{
+        max-width: 50px;
+        height: auto;
+    }
+
+    div.article figure {
+        float: right;
+        width: 50%;
+        margin-left: 2%;
+        padding-bottom: 2%;
+    }
+
 
     /*----------- FOOTER --------------*/
 
 
     /* -----------hero image ------------ */
 
-    div.hero-div{
-        margin: 0 auto;
+    div.hero-div {
+        margin-left: 2%;
         position: relative;
-        width: 100%;
-        height: 300px;
         /* 
         transform: translate(-50%, -50%);
         color: white;
         top: 50%;
         left: 50%; */
     }
-    
-    
-    div.hero-ph{
+
+
+    div.hero-ph {
         width: 100%;
         height: 100%;
         /* background-position: center;
@@ -85,13 +101,26 @@ section.forecast div h5{
         background-size: cover;
         position: relative; */
     }
-    
-    div.hero-ph img{
+
+    div.hero-ph img {
         /* filter: blur(1px); */
         width: 100%;
         height: 100%;
     }
-    
+
+    /* -------- Contact -------- */
+
+    div.contact div.iframe-map{
+        display: block;
+    }
+
+    div.contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
 
 }
 
