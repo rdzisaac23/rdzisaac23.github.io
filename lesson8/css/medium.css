@@ -1,5 +1,5 @@
 /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 40em) {
 
 
     /*----------- BODY --------------*/
@@ -29,52 +29,41 @@
         float: left;
     }
 
-    nav ul li a{
-        display: block;
-        padding: 14px 16px;
-        width: 100%;
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        padding: .8rem 1rem;
     }
 
-    
     /*----------- MAIN --------------*/
 
-section.forecast{
-    margin-top: 2%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
+    section.forecast {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
 
-section.forecast div{
-    text-align: center;
-    border: 1px solid #aaa;
-}
+    section.forecast div {
+        text-align: center;
+        border: .5px solid rgb(56, 11, 11);
+    }
 
-section.forecast div h5{
-    background-color: lightgrey;
-    margin: 0;
-    padding: 1rem 0;
-}
+    section.forecast div h5 {
+        background-color: #e9c46a;
+        margin: 0;
+        padding: 1rem 0;
+    }
 
-div.gallery{
-    grid-template-columns: 1fr 1fr;
-}
-
-div.gallery picture img{
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-div.gallery picture img:hover{
-    opacity: .7;
-}
+    div.grid-gallery{
+         grid-template-columns: 1fr 1fr;
+    }
 
     /*----------- FOOTER --------------*/
 
 
     /* -----------hero image ------------ */
 
-    div.hero-div{
+    div.hero-div {
         margin: 0 auto;
         position: relative;
         width: 100%;
@@ -85,9 +74,9 @@ div.gallery picture img:hover{
         top: 50%;
         left: 50%; */
     }
-    
-    
-    div.hero-ph{
+
+
+    div.hero-ph {
         width: 100%;
         height: 100%;
         /* background-position: center;
@@ -95,13 +84,13 @@ div.gallery picture img:hover{
         background-size: cover;
         position: relative; */
     }
-    
-    div.hero-ph img{
+
+    div.hero-ph img {
         /* filter: blur(1px); */
         width: 100%;
         height: 100%;
     }
-    
+
 
 }
 
