@@ -22,7 +22,7 @@
     }
 
     nav ul {
-        margin-left: 2%;
+        margin-left: 1%;
     }
 
     nav ul li {
@@ -36,6 +36,10 @@
     }
 
     /*----------- MAIN --------------*/
+
+    main {
+        padding: 2% 0%;
+    }
 
     section.forecast {
         margin-top: 2%;
@@ -54,8 +58,20 @@
         padding: 1rem 0;
     }
 
-    div.grid-gallery{
-         grid-template-columns: 1fr 1fr;
+    div.forecast section.forecast div img {
+        max-width: 50px;
+        height: auto;
+    }
+
+    div.article figure {
+        float: right;
+        width: 50%;
+        margin-left: 2%;
+        padding-bottom: 2%;
+    }
+
+    div.grid-gallery {
+        grid-template-columns: 1fr 1fr;
     }
 
     /*----------- FOOTER --------------*/
@@ -64,25 +80,13 @@
     /* -----------hero image ------------ */
 
     div.hero-div {
-        margin: 0 auto;
+        margin-left: 2%;
         position: relative;
-        width: 100%;
-        height: 300px;
-        /* 
-        transform: translate(-50%, -50%);
-        color: white;
-        top: 50%;
-        left: 50%; */
     }
-
 
     div.hero-ph {
         width: 100%;
         height: 100%;
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative; */
     }
 
     div.hero-ph img {
@@ -90,6 +94,18 @@
         width: 100%;
         height: 100%;
     }
+
+    /* -------- Contact -------- */
+
+    div.contact div.iframe-map {
+        display: block;
+    }
+
+    div.contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
 
 }

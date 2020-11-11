@@ -23,19 +23,20 @@ body {
 /*----------- HEADER --------------*/
 
 div#headerWrapper {
-    background-color: #364b5b;
+    background-color: #264653;
 }
 
 header {
     padding: .5rem 2%;
-    color: antiquewhite;
-    font-family: 'Montserrat', sans-serif1;
+    background-color: #264653;
+    color: #e76f51;
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 header img {
     float: left;
     margin-right: 10px;
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
@@ -53,7 +54,7 @@ header h2 {
 /*----------- NAVIGATION --------------*/
 
 div.navWrapper {
-    background-color: #B49A67;
+    background-color: #2A9D8F;
 }
 
 nav button {
@@ -64,9 +65,8 @@ nav button {
     color: #555;
 }
 
-
 nav {
-    font-family: 'Montserrat', sans-serif1;
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 nav ul {
@@ -77,7 +77,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #364b5b;
+    color: whitesmoke;
     padding: .8rem 2%;
     text-decoration: none;
     font-weight: 600;
@@ -87,8 +87,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #aaa;
-    color: antiquewhite;
+    background-color: #E9C46A;
+    color: #333;
 }
 
 nav ul li.active a {
@@ -102,12 +102,11 @@ nav ul.hide {
 
 /*----------- MAIN --------------*/
 main {
-    /* padding: 0 2%; */
     min-height: 10rem;
 }
 
 h1 {
-    margin: 2% 0 2% 2%;
+    margin: 0;
     padding: 0 2%;
 }
 
@@ -128,15 +127,14 @@ div.hideme {
 }
 
 div.hero-div {
-    margin: 10px auto;
+    margin-left: 2%;
     position: relative;
-    width: 100%;
-    height: 250px;
 }
 
 div.hero-ph {
     width: 100%;
     height: auto;
+    border: yellow 1px solid;
 }
 
 div.hero-ph img {
@@ -157,74 +155,106 @@ div.hero-ph img {
     color: #44170D;
 }
 
-section.forecast{
+section.forecast {
     display: none;
 }
 
 div.article {
-    background-color: #aaa;
-    padding: 0 2%;
+    margin-left: 2%;
 }
+
+div.article figure img {
+    width: 100%;
+}
+
+div.article figure {
+    width: 100%;
+    margin: 0;
+}
+
+/* ----------- CONTACT ------------ */
 
 div.contact {
-    background-color: #aaa;
-    padding: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-div.gallery-title{
+div.contact div.iframe-map {
+    display: none;
+}
+
+/* ----------- Gallery -------------- */
+
+div.gallery-title {
     margin: 0;
     padding-top: 2%;
     text-align: center;
 }
 
-div.gallery{
+div.grid-gallery {
     margin-top: 5%;
     margin-left: 4%;
     display: grid;
-    gap: 5px;
-    width: 100%;
+    gap: 40px;
+    width: 90%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
-div.gallery picture img{
+div.grid-gallery picture {
+    border: solid .25px #777;
+
+}
+
+div.grid-gallery picture:hover {
+    border: solid 1px #777;
+    box-shadow: 10px 5px 5px grey;
+}
+
+div.grid-gallery picture img {
     width: 100%;
+    margin: auto;
 }
 
-div.container{
+div.container {
     display: none;
+    margin: 0;
 }
 
+div.container p {
+    margin: 0%;
+}
 
-main div.cards div{
+/* Index ----------------------- */
+
+main div.cards div {
     margin-top: 2%;
     padding: 1%;
 }
 
-main div.cards div img{
+main div.cards div img {
     width: 100%;
     margin-top: 2%;
     border-radius: 15px;
 }
 
-main div.cards div h2{
+main div.cards div h2 {
     margin: 2% 0 0 2%;
 }
 
-main div.cards div h3{
+main div.cards div h3 {
     margin: 2% 0 5% 2%;
 }
 
-main div.cards div p{
+main div.cards div p {
     margin: 0;
     margin-left: 2%;
 }
 
-/* ------------- FORM ------------ */
 
 /*----------- FORM --------------*/
 
-div.form{
+div.form {
     width: 90%;
     margin: auto;
 }
@@ -242,12 +272,13 @@ form legend {
     padding: 0 .5rem;
 }
 
-form label.top, form div {
+form label.top,
+form div {
     display: block;
     padding-top: 1rem;
- 
     font-size: 1rem;
 }
+
 form label.topSlide {
     display: block;
     padding-top: 1rem;
@@ -257,11 +288,13 @@ form label.topSlide {
     padding: .75rem;
     border: solid 1px #999;
     border-radius: 4px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     color: blue;
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select,
+input.datalist {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -271,7 +304,7 @@ form label.top input, form label.top select {
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.sbs {
@@ -290,6 +323,7 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+
 form label.top input:required {
     border-left: solid red 6px;
 }
@@ -297,13 +331,14 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: solid green 6px;
 }
+
 #stormRangeValue {
     margin: 0 5px;
 }
 
-/*----------- FOOTER --------------*/
+//*----------- FOOTER --------------*/
 div.footer {
-    background-color: #364B5B;
+    background-color: #264653;
     margin-top: 5%;
 }
 
@@ -321,11 +356,11 @@ footer a {
 }
 
 footer a:visited {
-    color: crimson;
+    color: #e76f51;
 }
 
 footer a:hover {
-    color: brown;
+    color: #E9C46A;
 }
 
 
