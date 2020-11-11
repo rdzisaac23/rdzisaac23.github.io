@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Preston</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.icon">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+    <!-- toggleMenu()-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <h1>Weather Wellnes</h1>
+            <h2>Best weather is well</h2>
+            <!-- current conditions -->
+        </header>
+    </div>
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-content">
+        <h1>Storm Center</h1>
+        <!--  -->
+        <div class="form">
+            <form method="get" action="thanks.html" autocomplete="on">
+                <!--  -->
+                <fieldset>
+                    <legend>Person Information</legend>
+                    <label class="top">Full Name*<input type="text" name="name" required
+                            pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}"></label>
+                    <label class="top">Email<input type="email" name="email"
+                            placeholder="someone@something.com"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}"
+                            maxlength="14" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                </fieldset>
+                <!--  -->
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <!--  -->
+                    <label class="top">Storm Type
+                        <select name="stormType">
+                            <option value="">Select Type...&#9662;</option>
+                            <option value="flashFlood">Flash Flood</option>
+                            <option value="hail">Hail</option>
+                            <option value="hurricane">Hurricane</option>
+                            <option value="thunderstorm">Thunderstrom</option>
+                            <option value="tornado">Tornado</option>
+                        </select>
+                    </label>
+                    <!--  -->
+                    <div class="topSlide">
+                        <label>Storm Severity </label><input type="range" id="stormRange" value="5" min="1" max="10"
+                            step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="stormRangeValue">5</span>
+                    </div>
+                    <!--  -->
+                    <label class="top">Storm Region <select name="stormRegion">
+                            <option value="">Select Region...&#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select></label>
+                    <!--  -->
+                    <div>User In-Danger Level
+                        <label class="sbs"><input type="radio" name="indanger" value="yes">Yes</label>
+                        <label class="sbs"><input type="radio" name="indanger" value="maybe">Maybe</label>
+                        <label class="sbs"><input type="radio" name="indanger" value="no">No</label>
+                    </div>
+                    <!--  -->
+                    <div class="input-field">
+                        <label>Comments:
+                            <textarea rows="4" cols="35" name="comment" placeholder="Enter text here..."></textarea>
+                        </label>
+                    </div>
+                    <!--  -->
+                </fieldset>
+                <!--  -->
+                <input type="submit" value="Send to Storm Center" class="submitBtn">
+                <!--  -->
+            </form>
+        </div>
+        <!--  -->
+    </main>
+    <!--  -->
+    <div class="footer">
+        <footer>
+            <!-- The footer contains contact information
+            map in the upper section
+            copyright information, the author's name, a terms of use link,
+            the current date in the bottom row. -->
+            Today's Date: <span id="currentdate"></span> <br>
+            &#9400; | Isaac Rodriguez | <span id="currentYear"></span> | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+            <script src="js/currendate.js"></script>
+        </footer>
+    </div>
+    <!--  -->
+    <script src="js/adjustRating.js"></script>
+</body>
+<!--  -->
+
+</html>
