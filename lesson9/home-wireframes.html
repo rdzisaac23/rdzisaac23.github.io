@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Preston</title>
+    <title>Home</title>
 
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,6 +20,9 @@
     <link href="css/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
+
+    <!-- toggleMenu()-->
+    <script src="js/scripts.js"></script>
     <!-- Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -29,8 +32,8 @@
     <div id="headerWrapper">
         <header class="clearfix">
             <img src="images/logo.png" alt="logo">
-            <h1>Weather Wellnes</h1>
-            <h2>Best weather is well</h2>
+            <h1>Cool Weather</h1>
+            <h2>coolweathers.com</h2>
             <!-- current conditions -->
         </header>
     </div>
@@ -44,14 +47,36 @@
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="home-wireframes.html">home-wireframes</a></li>
+                <li class="active"><a href="home-wireframes.html">home-wireframes</a></li>
             </ul>
         </nav>
     </div>
     <main class="main-content">
-        <h1>Thank you!!!</h1>
-        <p>Thank you for your submission. Your submission has been sent to our weather watching team. Your contribution
-            helps us to keep our site updated with the most up-to-date information about the weather in your area.</p>
+        <h1>Home Wireframes</h1>
+        <!--  -->
+        <div>
+            <h3>Mobile view</h3>
+            <figure>
+                <img src="images/mobile.png" alt="mobile view">
+                <figcaption>Less than 600px</figcaption>
+            </figure>
+        </div>
+        <div>
+            <h3>Table view</h3>
+            <figure>
+                <img src="images/tablet.png" alt="tablet view">
+                <figcaption>Less than 1028px</figcaption>
+            </figure>
+        </div>
+        <div>
+            <h3>Big view</h3>
+            <figure>
+                <img src="images/big.png" alt="big view">
+                <figcaption>Screen view</figcaption>
+            </figure>
+        </div>
+        <!--  -->
+        <!-- end content -->
     </main>
 
     <div class="footer">
@@ -66,18 +91,7 @@
             <script src="js/currendate.js"></script>
         </footer>
 
-        <script src="js/windchill.js"></script>
-
-        <script>
-            const date = new Date();
-            const today = date.getDay();
-            const element = document.getElementById("banner");
-            if (today == 6) {
-                element.classList.add("showme");
-            } else {
-                element.classList.add("hideme");
-            }
-        </script>
+        <script src="js/towns.js"></script>
     </div>
 </body>
 
