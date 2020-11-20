@@ -231,24 +231,20 @@ div.container p {
 /* Index ----------------------- */
 
 main div.cards div {
-    margin: 5% 0 2% 2%;
+    margin: 2% 0 2% 2%;
+}
+
+main div.cards div h2 {
+    margin: 4% 0 0 0;
 }
 
 main div.cards div h4{
-    margin: 2% 0 2% 0;
+    margin: 4% 0 2% 0;
 }
 
 main div.cards div img {
     width: 90%;
     border-radius: 15px;
-}
-
-main div.cards div h2 {
-    margin: 2% 0 0 0;
-}
-
-main div.cards div h3 {
-    margin: 2% 0 5% 2%;
 }
 
 main div.cards div p {

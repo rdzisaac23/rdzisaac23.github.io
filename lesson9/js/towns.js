@@ -19,6 +19,7 @@ fetch(requestURL)
     townFilter.forEach((town) => {
       let card = document.createElement('section');
       let div =document.createElement('div');
+      let div2 =document.createElement('div');
       let h2 = document.createElement('h2');
       let motto = document.createElement('h4');
       let year = document.createElement('p');
@@ -40,7 +41,8 @@ fetch(requestURL)
       div.appendChild(year);
       div.appendChild(population);
       div.appendChild(rainfall);
-      div.appendChild(img);
+      card.appendChild(div2);
+      div2.appendChild(img);
 
 
       document.querySelector('div.cards').appendChild(card);
