@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Preston</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+    <!-- toggleMenu()-->
+    <script src="js/scripts.js"></script>
+    <script src="js/displayBanner.js"></script>
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <h1>Cool Weather</h1>
+            <h2>coolweathers.com</h2>
+            <!-- current conditions -->
+        </header>
+    </div>
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li><a href="home-wireframes.html">home-wireframes</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="gallety-title">
+            <h1>Weather Gallery</h1>
+        </div>
+        <div class="grid-gallery">
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/1.jpg" alt="weather">
+                <div class="container">
+                    <p>Sky and Clouds</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/2.jpg" alt="weather">
+                <div class="container">
+                    <p>Twilight</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/3.jpg" alt="weather">
+                <div class="container">
+                    <p>Sunrise</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/4.jpg" alt="weather">
+                <div class="container">
+                    <p>Foggy Forest</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/5.jpg" alt="weather">
+                <div class="container">
+                    <p>Flash Tormenta</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/6.jpg" alt="weather">
+                <div class="container">
+                    <p>Storm</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/7.jpg" alt="weather">
+                <div class="container">
+                    <p>Yellowstone</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/8.jpg" alt="weather">
+                <div class="container">
+                    <p>Lago Dilimides</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/9.jpg" alt="weather">
+                <div class="container">
+                    <p>Tornado</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/10.jpg" alt="weather">
+                <div class="container">
+                    <p>Snow</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/11.jpg" alt="weather">
+                <div class="container">
+                    <p>Love Snow</p>
+                </div>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src="images/12.jpg" alt="weather">
+                <div class="container">
+                    <p>Fly</p>
+                </div>
+            </picture>
+
+        </div>
+        <!-- end content -->
+    </main>
+
+    <div class="footer">
+        <footer>
+            <!-- The footer contains contact information
+            map in the upper section
+            copyright information, the author's name, a terms of use link,
+            the current date in the bottom row. -->
+            Today's Date: <span id="currentdate"></span> <br>
+            &#9400; | Isaac Rodriguez | <span id="currentYear"></span> | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+            <script src="js/currendate.js"></script>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Montserrat']
+                }
+            });
+        </script>
+         <script src="js/lazyload.js"></script>
+    </div>
+</body>
+
+</html>
