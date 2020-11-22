@@ -74,17 +74,17 @@
         padding-bottom: 2%;
     }
 
-    div.gallery {
+    div.grid-gallery {
         grid-template-columns: 1fr 1fr;
     }
 
-    div.gallery picture img {
+    div.grid-gallery picture img {
         border-radius: 5px;
         cursor: pointer;
         transition: .3s;
     }
 
-    div.gallery picture img:hover {
+    div.grid-gallery picture img:hover {
         opacity: .7;
     }
 
