@@ -43,6 +43,11 @@
 
     /* ------------ FORECAST --------- */
 
+    section.weathersummary h3,
+    p {
+        margin-top: 2%;
+    }
+
     section#forecast {
         margin-top: 2%;
         display: grid;
@@ -100,13 +105,13 @@
         flex-direction: row-reverse;
     }
 
-    main div.cards section div{
+    main div.cards section div {
         width: 50%;
     }
 
-    main div.cards section div img{
+    main div.cards section div img {
         width: 100%;
-    } 
+    }
 
     /*----------- FOOTER --------------*/
 
