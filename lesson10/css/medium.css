@@ -43,9 +43,9 @@
 
     /* ------------ FORECAST --------- */
 
-    section.weathersummary h3,
+    div.hero-div section.weathersummary h3,
     p {
-        margin-top: 2%;
+        margin: 2%;
     }
 
     section#forecast {

@@ -46,12 +46,12 @@ fetch(apiURLf)
 
                 let theDayName = document.createElement("h3");
                 theDayName.textContent = myweekday[forecastDayNumber];
-                console.log(">"+myweekday[forecastDayNumber]);
+                console.log(">" + myweekday[forecastDayNumber]);
 
                 let theTemp = document.createElement("p");
                 theTemp.textContent = weatherForecast.list[i].main.temp + "\xB0";
 
-                    let iconcode = weatherForecast.list[i].weather[0].icon;
+                let iconcode = weatherForecast.list[i].weather[0].icon;
                 let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
                 let theIcon = document.createElement("img");
                 theIcon.src = iconPath

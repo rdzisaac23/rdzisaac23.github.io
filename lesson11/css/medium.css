@@ -1,0 +1,152 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 650px) {
+
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: auto;
+    }
+
+    /*----------- NAVIGATION --------------*/
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 1%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        padding: .8rem 1rem;
+    }
+
+    /*----------- MAIN --------------*/
+
+    main {
+        padding: 2% 0%;
+    }
+
+    /* ------------ FORECAST --------- */
+
+    div.hero-div section.weathersummary h3,
+    p {
+        margin: 2%;
+    }
+
+    section#forecast {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    section#forecast div {
+        text-align: center;
+        border: .5px solid rgb(56, 11, 11);
+    }
+
+    section#forecast div h3 {
+        background-color: #e9c46a;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    /* ------------ */
+
+    div.article figure {
+        float: right;
+        width: 50%;
+        margin-left: 2%;
+        padding-bottom: 2%;
+    }
+
+    div.grid-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.grid-gallery picture img {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    div.grid-gallery picture img:hover {
+        opacity: .7;
+    }
+
+    /* --------- cards ------------- */
+
+    main div.cards {
+        margin-right: 2%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div.cards section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main div.cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    main div.cards section div {
+        width: 50%;
+    }
+
+    main div.cards section div img {
+        width: 100%;
+    }
+
+    /*----------- FOOTER --------------*/
+
+
+    /* -----------hero image ------------ */
+
+    div.hero-div {
+        margin-left: 2%;
+        position: relative;
+    }
+
+    div.hero-ph {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.hero-ph img {
+        /* filter: blur(1px); */
+        width: 100%;
+        height: 100%;
+    }
+
+    /* -------- Contact -------- */
+
+    div.contact div.iframe-map {
+        display: block;
+    }
+
+    div.contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+}
+
+/* end of media query */

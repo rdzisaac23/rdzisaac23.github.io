@@ -1,0 +1,397 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-weight: 300;
+}
+
+
+/*----------- HEADER --------------*/
+
+div#headerWrapper {
+    background-color: #264653;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #264653;
+    color: #e76f51;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    /* font-size: 1.3rem; */
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    /* font-size: 1rem; */
+}
+
+/*----------- NAVIGATION --------------*/
+
+div.navWrapper {
+    background-color: #2A9D8F;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: whitesmoke;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav ul li a:hover {
+    background-color: #E9C46A;
+    color: #333;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+main {
+    min-height: 10rem;
+}
+
+h1{ 
+    margin: 0 0 0 2%;
+}
+
+div#banner {
+    text-align: center;
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    font-size: 2rem;
+    padding: 1px;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+div.hero-div {
+    width: 100%;
+    margin-left: 2%;
+    position: relative;
+}
+
+div.hero-ph {
+    width: 100%;
+    height: auto;
+    border: yellow 1px solid;
+}
+
+div.hero-ph img {
+    width: 100%;
+}
+
+section.weathersummary {
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    border: 1px solid green;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    opacity: .6;
+    color: #44170D;
+}
+
+section.weathersummary h3, p{
+    margin: 0;
+}
+
+/* Section Forecast 1 Fr */
+
+section#forecast {
+    display: none;
+}
+
+/* 
+section#forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin: 2%;
+}
+
+section#forecast div{
+    border: grey 1px solid;
+    border-radius: 5px;
+    text-align: center;
+        border: .5px solid rgb(56, 11, 11);
+} */
+
+/*  */
+
+div.article {
+    margin-left: 2%;
+}
+
+div.article figure img {
+    width: 100%;
+}
+
+div.article figure {
+    width: 100%;
+    margin: 0;
+}
+
+/* ----------- CONTACT ------------ */
+
+h2#contact{
+    margin-left: 2%;
+}
+
+div.contact {
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.contact div.iframe-map {
+    display: none;
+}
+
+/* ----------- Gallery -------------- */
+
+div.gallery-title {
+    margin: 0;
+    padding-top: 2%;
+    text-align: center;
+}
+
+div.grid-gallery {
+    margin-top: 5%;
+    margin-left: 4%;
+    display: grid;
+    gap: 40px;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+div.grid-gallery picture {
+    border: solid .25px #777;
+
+}
+
+div.grid-gallery picture:hover {
+    border: solid 1px #777;
+    box-shadow: 10px 5px 5px grey;
+}
+
+div.grid-gallery picture img {
+    width: 100%;
+    margin: auto;
+}
+
+div.container {
+    display: none;
+    margin: 0;
+}
+
+div.container p {
+    margin: 0%;
+}
+
+/* Index ----------------------- */
+
+main div.cards div {
+    margin: 2% 0 2% 2%;
+}
+
+main div.cards div h2 {
+    margin: 4% 0 0 0;
+}
+
+main div.cards div h4{
+    margin: 4% 0 2% 0;
+}
+
+main div.cards div img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+main div.cards div p {
+    margin: 0 0 2% 0;
+}
+
+
+/*----------- FORM --------------*/
+
+div.form {
+    width: 90%;
+    margin: auto;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #3a728f;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+form label.topSlide {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    width: 100%;
+    max-width: 20rem;
+    padding: .75rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: blue;
+}
+
+form label.top input,
+form label.top select,
+input.datalist {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #666;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: solid red 6px;
+}
+
+form label.top input:required:valid {
+    border-left: solid green 6px;
+}
+
+#stormRangeValue {
+    margin: 0 5px;
+}
+
+/*----------- FOOTER --------------*/
+div.footer {
+    background-color: #264653;
+    margin-top: 5%;
+}
+
+footer {
+    margin-top: 5%;
+    padding: .5rem 2%;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* ---------- Links -------------- */
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a:visited {
+    color: #e76f51;
+}
+
+footer a:hover {
+    color: #E9C46A;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
