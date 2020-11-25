@@ -125,19 +125,17 @@ div.hideme {
     display: none;
 }
 
-div.hero-div {
-    width: 100%;
-    margin-left: 2%;
+div.hero-div {    
     position: relative;
+    margin: 2%;
 }
 
 div.hero-ph {
-    width: 100%;
     height: auto;
     border: yellow 1px solid;
 }
 
-div.hero-ph img {
+div.hero-div div.hero-ph picture img{
     width: 100%;
 }
 
@@ -182,7 +180,7 @@ section#forecast div{
 /*  */
 
 div.article {
-    margin-left: 2%;
+    margin: 2%;
 }
 
 div.article figure img {
@@ -197,7 +195,7 @@ div.article figure {
 /* ----------- CONTACT ------------ */
 
 h2#contact{
-    margin-left: 2%;
+    margin: 2%;
 }
 
 div.contact {
