@@ -20,6 +20,7 @@ fetch(requestURL)
       let card = document.createElement('section');
       let div =document.createElement('div');
       let div2 =document.createElement('div');
+      div2.className = "townImage"
       let h2 = document.createElement('h2');
       let motto = document.createElement('h4');
       let year = document.createElement('p');
