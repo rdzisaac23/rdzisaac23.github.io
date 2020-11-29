@@ -178,6 +178,25 @@ section#forecast div{
         border: .5px solid rgb(56, 11, 11);
 } */
 
+/* Upcoming Events */
+
+section#events {
+    width: 300px;
+    padding: 5%;
+    border-radius: 5%;
+    margin: auto;
+    background-color: #264653;
+    color: antiquewhite;
+}
+
+section#events div{
+    margin: 2%;
+}
+
+section#events p{
+    margin-top: 15px;
+}
+
 /*  */
 
 div.article {
