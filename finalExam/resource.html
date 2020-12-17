@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Home</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+    <!-- toggleMenu()-->
+    <script src="js/scripts.js"></script>
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img src="images/logo.png" alt="logo">
+            <h1>Cool Weather</h1>
+            <h2>coolweathers.com</h2>
+            <!-- current conditions -->
+        </header>
+    </div>
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-content">
+        <h1>Home</h1>
+        <div class="cards"></div>
+        <!--  -->
+
+        <p>https://pixabay.com/es/illustrations/vespa-motor-scooter-rodillo-retro-1359088/</p>
+        <p>https://pixabay.com/es/photos/puesta-de-sol-moto-pere-ni%C3%B1o-4012074/</p>
+        <p>https://pixabay.com/es/photos/pcx-honda-rodillo-tim%C3%B3n-scooter-5020543/</p>
+        <p>https://pixabay.com/es/photos/atv-t%C3%A9cnica-chica-r%C3%ADo-2386374/</p>
+        <p>https://pixabay.com/es/photos/jeep-playa-4wd-arena-coche-4493768/</p>
+        
+        <!--  -->
+        <h2 id="contact">Contact Us</h2>
+        <div class="contact">
+            <div class="addres">
+                <h3><b>Addres</b></h3>The weather Center<br>123 Main Street<br>Franklin, MI 87654
+            </div>
+            <div class="phone">
+                <h3><b>Phone</b></h3>(801) 555-1234
+                <h3><b>Email:</b></h3>contact@cool.com
+            </div>
+            <div class="iframe-map">
+                <iframe width="50%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Franklin%20Mi+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+                <a href="https://www.maps.ie/route-planner.htm">Driving Route Planner</a>
+            </div>
+        </div>
+        <!--  -->
+        <!-- end content -->
+    </main>
+
+    <div class="footer">
+        <footer>
+            <!-- The footer contains contact information
+            map in the upper section
+            copyright information, the author's name, a terms of use link,
+            the current date in the bottom row. -->
+            Today's Date: <span id="currentdate"></span> <br>
+            &#9400; | Isaac Rodriguez | <span id="currentYear"></span> | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+            <script src="js/currendate.js"></script>
+        </footer>
+
+        <script src="js/towns.js"></script>
+    </div>
+</body>
+
+</html>

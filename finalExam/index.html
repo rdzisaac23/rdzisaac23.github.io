@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Home</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+    <!-- toggleMenu()-->
+    <script src="js/scripts.js"></script>
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <img src="images/vespa-60h.png" alt="logo">
+            <h1>El Chacal</h1>
+            <h3>Bueno Bonito Barato</h3>
+            <!-- current conditions -->
+        </header>
+    </div>
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-content">
+        <h1>Home</h1>
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>El Chacal</h1>
+                <p>Best Scotters in Cozumel</p>
+                <button>Rent Today</button>
+            </div>
+        </div>
+        <!--  -->
+        <!-- Weather -->
+        <div class="hero-div">
+            <div class="hero-ph">
+                <picture class="photoA">
+                    <source media="(max-width: 300px)" srcset="images/hero200.jpg">
+                    <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/hero800.jpg">
+                    <img src="images/hero1200.jpg" alt="preston">
+                </picture>
+            </div>
+            <!-- iclude at least the current temperature, current condition description, and humidity. -->
+            <section class="weathersummary">
+                <h3>Cozumel</h3>
+                <p>Temp: <span id="temp">34</span>&deg;</p>
+                <p>Feels like: <span id="low-temp">00</span>&deg;</p>
+                <p>Humidity:<span id="humidity">60</span></p>
+                <p id="description">message</p>
+            </section>
+        </div>
+        <!-- Rental Summary -->
+        <h2 id="title">Type of Rentals</h2>
+        <section class="grid-rentals">
+            <div>
+                <a href="#">
+                    <img src="/finalExam/images/hms_640.jpg" alt="Honda Scotter">
+                    <h5>Honda Motor Scotters</h5>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/finalExam/images/atv-2386374_640.jpg" alt="ATV">
+                    <h5>ATV Side-by-Side</h5>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/finalExam/images/jeep-4493768_640.jpg" alt="Jeep in the beach">
+                    <h5>Jeep Rentals</h5>
+                </a>
+            </div>
+        </section>
+        <!--  -->
+        <!--  -->
+        <section id="forecast">
+        </section>
+        <!--  -->
+        <h2 id="contact">Contact Us</h2>
+        <div class="contact">
+            <div class="addres">
+                <h3><b>Addres</b></h3>Cozumel<br>Terminal Puerta Maya<br>&<br>Carmen-Cozumel Ferry dock<br>
+            </div>
+            <div class="phone">
+                <h3><b>Phone</b></h3>(801) 555-1234
+                <h3><b>Email:</b></h3>contact@elchacal.com
+            </div>
+        </div>
+        <!--  -->
+        <!-- end content -->
+    </main>
+
+    <div class="footer">
+        <footer>
+            <div class="addres">
+                <h6><b>Addres</b></h6>Cozumel<br>Terminal Puerta Maya<br>&<br>Carmen-Cozumel Ferry dock<br>
+            </div>
+            <div class="phone">
+                <h6><b>Phone</b></h6>(801) 555-1234
+                <h6><b>Email:</b></h6>contact@elchacal.com
+            </div>
+            <!-- The footer contains contact information
+        map in the upper section
+        copyright information, the author's name, a terms of use link,
+        the current date in the bottom row. -->
+            Today's Date: <span id="currentdate"></span> <br>
+            &#9400; | Isaac Rodriguez | <span id="currentYear"></span> | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+            <script src="js/currendate.js"></script>
+        </footer>
+    </div>
+    <script src="js/forecast.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
