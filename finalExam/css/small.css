@@ -470,6 +470,27 @@ form label.top input:required:valid {
     margin: 0 5px;
 }
 
+/* Tours */
+
+div.tours{
+    width: 100%;
+}
+
+div.tours section.snorkel{
+    width: 100%;
+    margin-left: 2%;
+}
+
+div.tours section.snorkel div{
+    width: 100%;
+}
+
+div.tours section.snorkel figure img{
+    width: 100%;
+}
+
+
+
 /*----------- FOOTER --------------*/
 div.footer {
     background-color: #FB5607;
