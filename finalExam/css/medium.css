@@ -124,6 +124,18 @@
         width: 100%;
     }
 
+    /* Tours */
+
+    main div.tours{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div.tours section{
+        display: flex;
+        flex-direction: row;
+    }
+
     /* -----------hero image ------------ */
 
     div.hero-div {
