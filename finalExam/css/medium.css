@@ -43,7 +43,7 @@
 
     /* rentals grid */
 
-    section.grid-rentals{
+    section.grid-rentals {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5%;
     }
@@ -124,9 +124,6 @@
         width: 100%;
     }
 
-    /*----------- FOOTER --------------*/
-
-
     /* -----------hero image ------------ */
 
     div.hero-div {
@@ -156,7 +153,16 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /*----------- FOOTER --------------*/
 
+    div.footer footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer div.bottom{
+        grid-column: 1 / 3;
+    }
 
 }
 

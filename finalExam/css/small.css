@@ -474,6 +474,15 @@ form label.top input:required:valid {
 div.footer {
     background-color: #FB5607;
     margin-top: 5%;
+    font-weight: 400;
+}
+
+div.footer footer div{
+    color: black;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: .75em;
 }
 
 footer {
@@ -483,7 +492,10 @@ footer {
     color: antiquewhite;
 }
 
-/* ---------- Links -------------- */
+footer h6{
+    padding: 0;
+    margin: 0;
+}
 
 footer a {
     color: whitesmoke;
